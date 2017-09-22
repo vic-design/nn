@@ -100,13 +100,11 @@ class Neural
             $w[$i] += $deltaW[$i];
         }
 
-//        print "<pre>";
         print_r([
             'output' => $o,
             'weights' => $w
         ]);
-//        print "</pre>";
-//
+
         return [
             'output' => $o,
             'weights' => $w
