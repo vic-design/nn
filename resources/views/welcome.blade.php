@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+        <link rel="stylesheet" type="text/css" href="/css/app.css">
         <!-- Styles -->
         <style>
             html, body {
@@ -78,18 +79,13 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+
+                <div id="app">
+                    <example></example>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
+        <script src="/js/app.js"></script>
     </body>
 </html>
