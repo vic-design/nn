@@ -13,4 +13,11 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/nn', function () {
+    return redirect('/nn/new');
+})->name('nn');
+
+Route::get('/nn/new', 'NeuralNetworkController@newNetwork')->name('nn.new');
+Route::post('/nn/create', 'NeuralNetworkController@create')->name('nn.create');

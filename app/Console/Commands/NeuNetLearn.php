@@ -40,11 +40,12 @@ class NeuNetLearn extends Command
         /**
          * входные значения
          */
-        $l = [1, 0];
+        $I = [1, 0];
         /**
          * веса синапсов
          */
         $w = [0.45, 0.78, -0.12, 0.13, 1.5, -2.3];
+        $w = [1, 1, 1, 1, 1, 1];
         /**
          * входные значения скрытых нейронов
          */
@@ -52,9 +53,9 @@ class NeuNetLearn extends Command
         $count = 0;
 
         $start = microtime(true);
-        while($error > 0.001) {
-            print $count;
-            $result = Neural::learn($w, $l);
+        while($error > 0.0001) {
+            print $count."\n";
+            $result = Neural::learn($w, $I);
             $w = $result['weights'];
             $error = $result['output']['error'];
             $count++;
