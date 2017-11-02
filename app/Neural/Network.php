@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: progforce
- * Date: 27.10.17
- * Time: 16:01
- */
 
 namespace App\Neural;
 
