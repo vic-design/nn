@@ -26,4 +26,8 @@ class NeuralNetwork extends Model
     public function neurons() {
         return $this->hasMany(Neuron::class, 'nn_id');
     }
+
+    public function getInputs() {
+        return $this->neurons->where('type', 'input');
+    }
 }
