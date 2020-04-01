@@ -39,7 +39,6 @@ class NeuNetLearn extends Command
     public function handle() {
 
         $nn = new Neural\Network(NeuralNetwork::find(1));
-        dd(123);
         /**
          * входные значения
          */
